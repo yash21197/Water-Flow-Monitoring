@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <title>wtf_login</title>
+        
+        
+        <link rel="stylesheet" type="text/css" href="homelogin.css">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+        <script type ="text/javascript" src ="homelogin.js"></script>
+        
+        
+    </head>
+    
+    <body onload="disable()">
+        
+        <div class="container">
+        
+            <div class="border"></div>
+            <div class="content">
+                
+                <div id="content2">
+                    
+                    <div class="login">
+                        
+                        <div class="btns">
+                            <button id="public">Public</button>
+                            <button id="admin">Administrator</button>
+                        </div>
+                        
+                        <div class="activity">
+                        
+                            <div class="publicact">
+                            
+                                <form>
+                                
+                                    <div class="input"><input type="text" id="pname" name="pname" placeholder="User Name" style="font-size:30px" onkeyup="getpublicname()"></div>
+                                    <div class="input"><input type="password" id="ppswd" name="ppswd" placeholder="Password" style="font-size:30px" onkeyup="getpublicpassword()"></div>
+                                    <div class="input"><input type="text" id="pid" name="pid" placeholder="Product Id" style="font-size:30px" onkeyup="getpublicpid()" ></div>
+                                    <div class="input"><input type="button" id="publiclogin" value="Login"></div>
+                                    
+                                </form>
+                                
+                            </div>
+                            
+                            <div class="adminact">
+                            
+                                <form>
+                                    
+                                    <div class="input1"><input type="text" id="aname" name="aname" placeholder="Admin Name" style="font-size:30px" onkeyup="getadminname()"></div>
+                                    <div class="input1"><input type="password" id="apswd" name="apswd" placeholder="Password" style="font-size:30px" onkeyup="getadminpassword()"></div>
+                                    <div class="input1"><input type="button" id="adminlogin" value="Login"></div>
+                                    
+                                </form>
+                            
+                            </div>
+                        
+                        </div>
+                    
+                        
+                    
+                    </div>
+                    
+                
+                </div>
+                                
+            </div>
+        
+        </div>
+        
+    </body>
+    
+</html>

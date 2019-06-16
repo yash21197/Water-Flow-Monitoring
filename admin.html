@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        
+        <meta charset="utf-8">
+        <title>admin page.</title>
+        
+        <link rel="stylesheet" type="text/css" href="admin.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script type ="text/javascript" src ="admin.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>        
+        
+    </head>
+    
+    <body>
+        
+        <div class="admincontent">
+            
+            <div class="logout">
+                <input type="button" id="logoutbtn" value="Logout">
+            </div>
+            
+            <div class="adminname" id="adminname">Admin Name : </div>
+            
+            <br><br>
+            
+            <div class="adminbtns">
+                
+                <form>
+                    
+                    <input type="button" id="changes" value="change adminname and password">
+                    <input type="button" id="addproduct" value="products">
+                    <input type="button" id="adduser" value="users">
+                    
+                </form>
+                
+            </div>
+            
+            <br><br>
+            
+            <div class="content">
+                
+                <div class="change_name_password">
+                    <input type="text" class="inputs" id="changecontent" placeholder="Enter New Admin Name">
+                    <br>
+                    <input type="button" class="inputs" id="changebtn" value="Change adminname">
+                    <br>
+                    <input type="password" class="inputs" id="changecontent" placeholder="Enter Current Password">
+                    <br>
+                    <input type="password" class="inputs" id="changecontent" placeholder="Enter New Password">
+                    <br>
+                    <input type="password" class="inputs" id="changecontent" placeholder="Enter New Password Again">
+                    <br>
+                    <input type="button" class="inputs" id="changebtn" value="Change Password">
+                    <br>
+                </div>
+                <div class="product">
+                    <input type="text" class="inputs1" id="insertpid" placeholder="Enter valid Product ID to Register">
+                    <br>
+                    <input type="button" class="inputs1" id="registerbtn" value="Register Product">
+                    <br>
+                    <input type="text" class="inputs1" id="removepid" placeholder="Enter valid Product ID to Remove">
+                    <br>
+                    <input type="button" class="inputs1" id="removebtn" value="Remove Product">
+                    <br>
+                </div>
+                <div class="user">
+                    <input type="text" class="inputs2" id="username" placeholder="Enter User Name">
+                    <br>
+                    <input type="password" class="inputs2" id="userpswd" placeholder="Enter Password">
+                    <br>
+                    <input type="password" class="inputs2" id="userrpswd" placeholder="Enter Password Again">
+                    <br>
+                    <input type="text" class="inputs2" id="userpid" placeholder="Enter Product ID">
+                    <br>
+                    <input type="button" class="inputs2" id="userbtn" value="Register User">
+                    <br>
+                </div>
+                
+            </div>
+            
+        
+            
+        </div>
+        
+    </body>
+    
+</html>

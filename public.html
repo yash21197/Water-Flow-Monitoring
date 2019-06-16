@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <title>PUBLIC</title>
+        
+        <link rel="stylesheet" type="text/css" href="public.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+        <script type ="text/javascript" src ="public.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>        
+    
+    </head>
+    
+    <body>
+        
+        <div class="publiccontent">
+            
+            <div class="logout"><input type="button" value="Logout" id="logoutbtn"></div>
+            
+            <div>
+                
+                <div class="pcontent" id="p_name">User Name : </div>
+                <div class="pcontent" id="p_pid">Product ID : </div>
+                <div class="pcontent" id="p_addby">Added By : </div>
+                <div class="pcontent" id="p_status">Current Status : </div>
+                <div class="pcontent" id="p_value">current Value : </div>
+                
+            </div>
+            <br>
+            <div>
+                <div>
+                    <input type="button" id="graphshow" value="Show Graph">
+                    <input type="button" id="turnbtn" value="turn">
+                </div>
+                <br>
+                <div>
+                    <input type="button" id="changebtn" value="change username and password">
+                    <input type="button" id="deletebtn" value="delete account">
+                </div>                
+            </div>
+            <br>
+            
+            <div>
+
+                <div class="graph" style="height: 350px; width:650px;">
+                    <canvas id="chart" width="650" height="350"></canvas>
+                </div>
+                
+                <div class="changepubliccontent">
+                    
+                    <input type="text" class="newcontent" id="username" placeholder="Enter New UserName"><br>
+                    <input type="button" class="newcontent" id="change" value="Change UserName"><br>
+                    <input type="text" class="newcontent" id="opswd" placeholder="Enter Old Password"><br>
+                    <input type="text" class="newcontent" id="npswd" placeholder="Enter New Password"><br>
+                    <input type="text" class="newcontent" id="rnpswd" placeholder="Enter New Passwod Again"><br>
+                    <input type="button" class="newcontent" id="change" value="Change Password"><br>
+                    
+                </div>
+            </div>
+            
+        </div>        
+        
+    </body>
+    
+</html>
